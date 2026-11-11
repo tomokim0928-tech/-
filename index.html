@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YOUR NAME — Personal Portfolio</title>
+<meta name="description" content="のプロフィールサイト">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<style>
+.external-links {
+  padding-top: 40px;
+}
+
+.link-list {
+  margin-top: 30px;
+  border-top: 1px solid rgba(0,0,0,.15);
+}
+
+.external-link {
+  display: grid;
+  grid-template-columns: 70px 1fr 50px;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 10px;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+  text-decoration: none;
+  color: inherit;
+  transition: transform .3s ease, padding-left .3s ease;
+}
+
+.external-link:hover {
+  transform: translateX(8px);
+  padding-left: 18px;
+}
+
+.external-link > span {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  opacity: .55;
+}
+
+.external-link h3 {
+  margin: 0 0 3px;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: .08em;
+  font-size: 18px;
+}
+
+.external-link p {
+  margin: 0;
+  font-size: 13px;
+  opacity: .6;
+}
+
+.external-link > b {
+  font-size: 25px;
+  font-weight: 400;
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .external-link {
+    grid-template-columns: 45px 1fr 35px;
+    gap: 12px;
+  }
+}
+
+.hero-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+</style>
+
+</head>
+<body>
+<div class="cursor"></div>
+
+<header class="nav">
+  <a class="brand" href="#home"><span>Y</span> PROFILE</a>
+  <nav>
+    <a href="#about">ABOUT</a>
+    <a href="#strength">STRENGTH</a>
+    <a href="#life">LIFE</a>
+    <a href="#future">FUTURE</a>
+    <a href="#links">LINKS</a>
+  </nav>
+  </header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-bg-word">PROFILE</div>
+  <div class="hero-copy">
+    <p class="kicker"><i></i> PERSONAL PORTFOLIO / 2026</p>
+    <h1>Tomoki<br><em>MATSUMOTO</em></h1>
+    <p class="hero-sub">自分らしく、挑戦する。<br>人との出会いを、成長につなげる。</p>
+    <a class="circle-link" href="#about"><span>SCROLL</span><b>↓</b></a>
+  </div>
+  <div class="hero-photo">
+      <img src="バイク(3).jpg" alt="海辺に停めたバイクと自分">
+  </div>
+</section>
+
+<section id="about" class="section about">
+  <div class="section-head">
+    <p>01 / ABOUT ME</p>
+    <h2>Who I am.</h2>
+  </div>
+  <div class="about-content">
+    <div class="big-number">01</div>
+    <div class="about-text">
+      <p class="lead">こんにちは、<strong>松本朋樹</strong>です。</p>
+      <p>人との関わりを大切にしながら、新しいことに挑戦することが好きです。自分だけで考えるのではなく、周りの人の意見や考えを聞き、そこから新しいアイデアを見つけることを大切にしています。</p>
+      <p>このサイトでは、私の性格や強み、好きなこと、これから挑戦したいことを紹介しています。</p>
+      <div class="mini-info">
+        <div><span>NAME</span><b>Tomoki MATSUMOTO</b></div>
+        <div><span>BASED IN</span><b>JAPAN Kyoto</b></div>
+        <div><span>INTEREST</span><b>SPORTS / MUSIC / NAture</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="strength" class="section strength">
+  <div class="section-head light">
+    <p>02 / STRENGTH</p>
+    <h2>What I do well.</h2>
+  </div>
+  <div class="strength-list">
+    <article>
+      <span>01</span>
+      <div><h3>COMMUNICATION</h3><p>相手の話をしっかり聞き、相手の立場を考えて行動することを大切にしています。</p></div>
+      <b></b>
+    </article>
+    <article>
+      <span>02</span>
+      <div><h3>LEADERSHIP</h3><p>周囲を見ながら、一人ひとりの良さを活かしてチームを動かすことができます。</p></div>
+      <b></b>
+    </article>
+    <article>
+      <span>03</span>
+      <div><h3>CHALLENGE</h3><p>初めてのことでもまず行動し、経験から学びながら次の挑戦につなげます。</p></div>
+      <b></b>
+    </article>
+  </div>
+</section>
+
+<section id="life" class="section life">
+  <div class="section-head">
+    <p>03 / MY LIFE</p>
+    <h2>Things I love.</h2>
+  </div>
+  <div class="life-grid">
+    <article class="life-card large-card">
+
+      <div class="life-image sports">Rugby</div>
+      <div class="life-meta"><span>01</span><h3>SPORTS</h3></div>
+      <p>ラグビーを通して、仲間と協力することや最後まで努力することを学びました。</p>
+    </article>
+    <article class="life-card">
+      <div class="life-image music">MUSIC</div>
+      <div class="life-meta"><span>02</span><h3>MUSIC</h3></div>
+      <p>好きな音楽を聴いてリフレッシュする時間も大切にしています。</p>
+    </article>
+    <article class="life-card">
+      <div class="life-image learn">LEARN</div>
+      <div class="life-meta"><span>03</span><h3>Nature</h3></div>
+      <p>自然に触れることで、頭をリフレッシュすることが好きです。</p>
+    </article>
+  </div>
+</section>
+
+<section id="future" class="section future">
+  <div class="future-label">04 / FUTURE</div>
+  <div class="future-content">
+    <p class="small">KEEP MOVING FORWARD.</p>
+    <h2>BE<br><em>CURIOUS.</em><br>BE YOURSELF.</h2>
+    <p class="future-copy">これからもさまざまな人と出会い、多くの経験を積みながら、自分にしかできないことを見つけていきたいです。</p>
+  </div>
+</section>
+
+<section id="links" class="section external-links">
+  <div class="section-head">
+    <p>05 / EXTERNAL LINKS</p>
+    <h2>My links.</h2>
+  </div>
+
+  <div class="link-list">
+    <a href="https://drive.google.com/file/d/1dmkaYYeN2BcAvQc-xt-jO3Am_--OIw9t/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="external-link">
+      <span>01</span>
+      <div>
+        <h3>高校一年次</h3>
+       
+      </div>
+      <b>↗</b>
+    </a>
+
+    <a href="https://drive.google.com/file/d/16sHTYX4xdLCUlU0MVyOZHVyCjQHdIamn/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="external-link">
+      <span>02</span>
+      <div>
+        <h3>高校二年次</h3>
+        <p></p>
+      </div>
+      <b>↗</b>
+    </a>
+
+    <a href="" target="_blank" rel="noopener noreferrer" class="external-link">
+      <span>03</span>
+      <div>
+        <h3>高校三年次</h3>
+        <p></p>
+      </div>
+      <b>↗</b>
+    </a>
+  </div>
+</section>
+
+
+<section id="contact" class="contact">
+  <p>06 / THANK YOU</p>
+  <h2>LET'S<br><em>CONNECT.</em></h2>
+  <p class="contact-copy">最後まで見ていただき、ありがとうございました。</p>
+  <a href= class="mail"> <span></span></a>
+</section>
+</main>
+
+<footer><span>© My profile </span><span>PERSONAL PROFILE</span><a href="#home">BACK TO TOP ↑</a></footer>
+<script>
+const cursor=document.querySelector('.cursor');
+document.addEventListener('mousemove',e=>{cursor.style.left=e.clientX+'px';cursor.style.top=e.clientY+'px'});
+document.querySelectorAll('a').forEach(a=>a.addEventListener('mouseenter',()=>cursor.classList.add('big')));
+document.querySelectorAll('a').forEach(a=>a.addEventListener('mouseleave',()=>cursor.classList.remove('big')));
+</script>
+</body>
+</html>
